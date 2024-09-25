@@ -8,10 +8,7 @@ on:
     types: [opened, synchronize]
     paths:
       - 'force-app/**'
-    paths-ignore:
-      - 'sfdx-project.json'
-      - 'README.md'
-
+      
 # Jobs to be executed
 jobs:
   validate:
