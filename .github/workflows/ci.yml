@@ -53,7 +53,7 @@ jobs:
 
       # Authenticate to org using the URL stored in the text file
       - name: 'Authenticate to Integration Org'
-        run: sfdx auth:sfdxurl:store -f ./SFDX_INTEGRATION_URL.txt -s -a integration
+        run: sfdx auth:sfdxurl:store -f ./SFDX_AUTH_URL.txt -s -a integration
 
       - name: 'Create delta packages for new, modified or deleted metadata'
         run: | 
