@@ -5,8 +5,7 @@ public with sharing class AccountTriggerHandler {
 
     public void onBeforeInsert(List<Account> newAccounts){
         for (Account acc : newAccounts) {
-            acc.Phone = '666666';
-            
+            acc.Phone = '777777';            
         }        
     }
 
