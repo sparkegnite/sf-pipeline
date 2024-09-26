@@ -42,10 +42,6 @@ jobs:
           sudo apt-get update
           sudo apt install default-jdk
 
-      # Install SFDX scanner
-      - name: 'Installing SFDX scanner'
-        run: sfdx plugins:install @salesforce/sfdx-scanner
-
       - name: 'Populate auth file with SFDX_URL secret of integration org'
         shell: bash
         run: |
