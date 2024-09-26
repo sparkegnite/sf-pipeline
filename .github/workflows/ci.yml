@@ -58,4 +58,4 @@ jobs:
 
       - name: 'Check-only deploy delta changes'
         run: |          
-          sfdx force:source:deploy -p force-app
+          sfdx force:source:deploy -p "changed-sources/force-app"
