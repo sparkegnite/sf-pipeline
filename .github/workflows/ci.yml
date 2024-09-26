@@ -59,3 +59,7 @@ jobs:
         run: | 
           mkdir changed-sources
           sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+
+      - name: 'Check-only deploy delta changes'
+        run: |
+          sfdx force:source:deploy -p "changed-sources/force-app" --checkonly
